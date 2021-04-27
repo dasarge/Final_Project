@@ -23,13 +23,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="./index.html">Investment Analysis</a>
+      <a class="navbar-brand" href="./i">Investment Analysis</a>
 
       </div>
       <ul class="nav navbar-nav navbar-right">
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.html">Landing Page</a></li>
+            <li class="active"><a href="./">Landing Page</a></li>
             <li class="dropdown">
               <a
                 class="dropdown-toggle"
@@ -39,8 +39,8 @@
               ></a>
               <ul class="dropdown-menu">
                 <li><a href="{{url_for('bitcoin')}}">Bitcoin Indexes</a></li>
-                <li><a href="{{url_for('bitcoin')}}">Etherium Indexes</a></li>
-                <li><a href="{{url_for('bitcoin')}}">Litecoin Indexes</a></li>
+                <li><a href="{{url_for('etherium')}}">Etherium Indexes</a></li>
+                <li><a href="{{url_for('litecoin')}}">Litecoin Indexes</a></li>
               </ul>
           </ul>
         </div>
@@ -113,9 +113,9 @@
               <h2 class="description-header">visualizations</h2>
               <div class="row show-grid">
                 <div class="col-md-6">
-                  <a href="./2_Bitcoin_Indexes.html">
+                  <a href="{{url_for('bitcoin')}}">
                     <img
-                      src="static/image/1-1_Bitcoin_Dollar.png"
+                      src="static/image/Bitcoin_logo.svg"
                       style="width: 100%;"
                   /></a>
                 </div>
