@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from flask import Flask
+from flask.wrappers import Request
 
 
 # Dependencies
@@ -15,8 +15,10 @@ def home():
     return render_template("index.html",)
 
 
-@app.route("/bitcoin")
+@app.route("/bitcoin", methods=['GET', 'POST'])
 def bitcoin():
+    if Request.method == 'POST':
+        return redirect(url_for('home'))
     # Return template and data
     return render_template("2_Bitcoin_Indexes.html",)
 
