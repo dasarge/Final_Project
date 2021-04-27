@@ -23,6 +23,22 @@ def bitcoin():
     return render_template("2_Bitcoin_Indexes.html",)
 
 
+@app.route("/etherium", methods=['GET', 'POST'])
+def etherium():
+    if Request.method == 'POST':
+        return redirect(url_for('home'))
+    # Return template and data
+    return render_template("3_Etherium_Indexes.html",)
+
+
+@app.route("/litecoin", methods=['GET', 'POST'])
+def litecoin():
+    if Request.method == 'POST':
+        return redirect(url_for('home'))
+    # Return template and data
+    return render_template("4_Litecoin_Indexes.html",)
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
 
