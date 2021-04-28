@@ -47,12 +47,12 @@ def compare_chart():
     return render_template("compare_chart.html",)
 
 
-@app.route("/data", methods=['GET', 'POST'])
-def data():
+@app.route("/data1", methods=['GET', 'POST'])
+def data_():
     if Request.method == 'POST':
         return redirect(url_for('home'))
     # Return template and data
-    return render_template("data",)
+    return render_template("data.html",)
 
 
 if __name__ == "__main__":
