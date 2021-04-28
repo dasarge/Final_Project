@@ -10,6 +10,8 @@ for the colaborator
 https://devcenter.heroku.com/articles/collab
 
 
+login to heroku --- heroku login
+
 The name of our app is : cryptocurrency-analysis-04-25
 
 from command line
