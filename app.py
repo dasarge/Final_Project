@@ -52,7 +52,7 @@ def data():
     if Request.method == 'POST':
         return redirect(url_for('home'))
     # Return template and data
-    return render_template("6_data",)
+    return render_template("data",)
 
 
 if __name__ == "__main__":
