@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Cryptos vs. Indexes: Understanding their Relation to Predict the Future</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cryptos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Plots
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{url_for('bitcoin')}}">Bitcoin Indexes</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('etherium')}}">Etherium Indexes</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('litecoin')}}">Litecoin Indexes</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('compare_chart')}}">Compare Chart</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('data')}}">Data</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center mt-3">Multi Year Comparisons of Bitcoin and Indexes</h1>
+        <div class="row mt-3">
+
+            <div class="col-md">
+                <img class="img-responsive" src=" static/image/1_yr_compare.png" alt="Litecoin_index_comparison"
+                    width=720 height=480>
+                <img class="img-responsive" src=" static/image/3_yr_compare.png" alt="Litecoin_index_comparison"
+                    width=720 height=480>
+                <img class="img-responsive" src=" static/image/5_yr_compare.png" alt="Litecoin_index_comparison"
+                    width=720 height=480>
+                <h2 style="font-size:2vw;">
+                    As can be seen with a little examination of the 1 year, 3 year and 5 years
+                    charts. There are large differences in performance over time and investing
+                    should be looked at as risky. Although with wise strategy diligence it is
+                    possible to realize a high rate of return over time.
+
+                    Good luck and invest wisely
+                </h2>
+            </div>
+        </div>
+        <div class="col-sm">
+            <h2 class="text-center mt-3"><strong>Cryptocurrencies</strong></h2>
+            <a href="{{url_for('bitcoin')}}">
+                <img border=0 alt="Machine Learning Project: Bitcoin vs." class="img-responsive"
+                    src="static/image/Bitcoin_Logo.png" width=200 height=200>
+            </a>
+            <a href="{{url_for('etherium')}}">
+                <img border=0 alt="Machine Learning Project: Ethereum vs." class="img-responsive"
+                    src="static/image/Ethereum_Logo.png" width=200 height=200>
+            </a>
+            <a href="{{url_for('litecoin')}}">
+                <img border=0 alt="Machine Learning Project: Litecoin vs." class="img-responsive"
+                    src="static/image/Litecoin_Logo.png" width=200 height=200>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
