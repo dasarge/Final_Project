@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Final Project: Crypto vs. Indexes</title>
+</head>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand btn-primary" href="index.html">Project Overview</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="temperature.html">Bitcoin vs.</a></li>
+                    <li><a href="humidity.html">Ethereum vs.</a></li>
+                    <li><a href="clouds.html">Litecoin vs.</a></li>
+                </ul>
+            </a>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-7">
+            <h1>Summary: Latitude and Weather</h1>
+            <hr>
+            <!-- Project Overview goes here -->
+            <p>The purpose of this project was to analyze weather changes as you get closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeatherAPI to assemble a dataset on over 500 cities. After assembling the dataset, I used Maplotlib to plot various aspects of weather vs. latitude. Factors included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <h1>Cryptocurrencies</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class = "row">
+                    <div class="col-sm-6">
+                        <a href="Bitcoin.html">
+                            <img border=0 alt="Machine Learning Project: Bitcoin vs."
+                             src="Images/Bitcoin_Logo.png" width=200 height=200>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="Ethereum.html">
+                            <img border=0 alt="Machine Learning Project: Ethereum vs." class="img-responsive"
+                             src="Images/Ethereum_Logo.png" width=200 height=200>
+                        </a>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class="col-sm-6">
+                        <a href="Litecoin.html">
+                            <img border=0 alt="Machine Learning Project: Litecoin vs." class="img-responsive"
+                             src="Images/Litecoin_Logo.png" width=200 height =200>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+Heroku instructions
+
+https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
+
+
+for the colaborator
+
+https://devcenter.heroku.com/articles/collab
+
+
+The name of our app is : cryptocurrency-analysis-04-25
+
+from command line
+
+from your teminal
+
+go to your  local git hub repo
+
+do a get pull - so  you are up to date
+
+do a git/ add/ commit/ push
+
+then
+
+do a   - git push heroku main
+
+after that is complete 
+
+type - heroku open main  - this will open the app in an active browser window
+
+
