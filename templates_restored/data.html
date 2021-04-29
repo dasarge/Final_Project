@@ -35,7 +35,7 @@
                         <li><a class="dropdown-item" href="{{url_for('etherium')}}">Etherium Indexes</a></li>
                         <li><a class="dropdown-item" href="{{url_for('litecoin')}}">Litecoin Indexes</a></li>
                         <li><a class="dropdown-item" href="{{url_for('compare_chart')}}">Compare Chart</a></li>
-
+                        <li><a class="dropdown-item" href="{{url_for('data_')}}">Data</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,28 +49,23 @@
 
 <body>
     <div class="container-fluid">
-        <h1 class="text-center mt-3">Multi Year Comparisons of Bitcoin and Indexes</h1>
+        <h1 class="text-center mt-3">Bitcoin compared to Indexes S&P 500, Dollar, and Gold</h1>
         <div class="row mt-3">
 
             <div class="col-md">
-                <img class="img-responsive" src=" static/image/1_yr_compare.png" alt="Litecoin_index_comparison"
-                    width=720 height=480>
-                <img class="img-responsive" src=" static/image/3_yr_compare.png" alt="Litecoin_index_comparison"
-                    width=720 height=480>
-                <img class="img-responsive" src=" static/image/5_yr_compare.png" alt="Litecoin_index_comparison"
-                    width=720 height=480>
-                <h2 style="font-size:2vw;">
-                    As can be seen with a little examination of the 1 year, 3 year and 5 years
-                    charts. There are large differences in performance over time and investing
-                    should be looked at as risky. Although with wise strategy diligence it is
-                    possible to realize a high rate of return over time.
-
-                    Good luck and invest wisely
+                <img class="img-responsive" src=" static/image/Bitcoin_index_compare.png" alt="Bitcoin_index_comparison"
+                    width=75% height=auto>
+                <h2>
+                    When Bitcoin is compared to the three indexes that we chose to illustrate and
+                    analyze future performance our moldel gave us good correlation, above 97%.
+                    When the actual performance of these investment tools is compared for 3
+                    years there seems to be some type of correlation. But this analysis will
+                    have to have a more extensive data set in order to prove correlation.
                 </h2>
             </div>
         </div>
-        <div class="col-sm">
-            <h1 class="text-center mt-3"><strong>Cryptocurrencies</strong></h1>
+        <div class="col-md">
+            <p class="text-center mt-3"><strong>Cryptocurrencies</strong></p>
             <a href="{{url_for('bitcoin')}}">
                 <img border=0 alt="Machine Learning Project: Bitcoin vs." class="img-responsive"
                     src="static/image/Bitcoin_Logo.png" width=200 height=200>

@@ -39,7 +39,7 @@ def litecoin():
     return render_template("4_Litecoin_Indexes.html",)
 
 
-@app.route("/compare_chart", methods=['GET', 'POST'])
+@app.route("/compare_charts", methods=['GET', 'POST'])
 def compare_chart():
     if Request.method == 'POST':
         return redirect(url_for('home'))
@@ -49,8 +49,3 @@ def compare_chart():
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
-
-
-# -----------------------------------------------
-# if __name__ == "__main__":
-#     app.run(port=5001)

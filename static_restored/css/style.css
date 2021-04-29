@@ -1,0 +1,53 @@
+h1 {
+  color: #48978e;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #4a8a84;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  line-height: 2;
+  font-size: large;
+}
+
+img {
+  display: block;
+  margin-left: 80px;
+  margin-right: auto;
+  margin-bottom: 45px;
+  width: 15%;
+}
+
+.navbar-toggle{
+  background-color: rgb(233, 238, 240);
+  border-color: #0891f3;;
+  color: rgb(233, 16, 16) !important;
+}
+
+.btn-primary{
+  background-color: #48978e;;
+  color: #ffffff !Important;
+}
+
+.btn-primary:hover{
+  background-color: #48978e !important;
+  color: #ffffff !Important;
+}
+
+.navbar-default{
+  background-color: rgb(233, 238, 240);
+}
+
+/* vertical-align:middle;margin:10px 0px
+
+@media (max-width: 767px) {
+  .navbar-default {
+      background-color: rgb(233, 238, 240);
+  }
+} */
